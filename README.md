@@ -1,4 +1,4 @@
-# Express-LAB-Assignment-2
+# Express-Practice-Assignment-2
 
 Congratulations on sharpening your API building skills! You will now work as a developer for an event coordinatior office in NYC. Residents frequently ask what events are happening in different parts of the city, what type of events they are, and whether they are free or paid. The city wants an API that allows flexible searching based on the URL and query parameters.
 
