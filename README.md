@@ -88,11 +88,11 @@ Adds a new event to the `events` array.
 Updates an existing event using the provided numeric `id`.
   - The request body should contain the event properties to update.
   - If the event does not exist, respond with an appropriate message.
-- Return the updated event.
+  - Return the updated event.
 
 - `DELETE /events/:id`  
 Deletes an event using the provided numeric `id`.
-- If the event does not exist, respond with an appropriate message.
-- Return a message confirming that the event was deleted.
+  - If the event does not exist, respond with an appropriate message.
+  - Return a message confirming that the event was deleted.
 
 - Any unknown route should return a 404 status with a `"Route not found"` message.
