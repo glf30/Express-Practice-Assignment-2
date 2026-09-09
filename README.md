@@ -59,7 +59,7 @@ const events = [
 
 ## Routes
 
-`GET /`  
+- `GET /`  
   Returns the full list of events.
 
 - `GET /borough/:boroughName`  
@@ -79,18 +79,18 @@ const events = [
 
   If no events match the provided search criteria, respond with a 404 status and a message indicating no results were found.
 
-`POST /events`  
+- `POST /events`  
 Adds a new event to the `events` array.
   - The request body should contain the event's `name`, `borough`, `type`, `free`, and `day`.
   - Return the newly created event.
 
-`PUT /events/:id`  
+- `PUT /events/:id`  
 Updates an existing event using the provided numeric `id`.
   - The request body should contain the event properties to update.
   - If the event does not exist, respond with an appropriate message.
 - Return the updated event.
 
-`DELETE /events/:id`  
+- `DELETE /events/:id`  
 Deletes an event using the provided numeric `id`.
 - If the event does not exist, respond with an appropriate message.
 - Return a message confirming that the event was deleted.
