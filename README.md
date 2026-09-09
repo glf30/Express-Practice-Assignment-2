@@ -63,13 +63,13 @@ const events = [
   Returns the full list of events.
 
 - `GET /borough/:boroughName`  
-  Returns all events for the given borough . If no events are found, respond with a 404 status and a message indicating no events were found for that borough.
+  Returns all events for the given borough . If no events are found, respond with a message indicating no events were found for that borough.
 
 - `GET /type/:eventType`  
   Returns all events that match the given event type.
 
 - `GET /events/:id`  
-  Returns a single event matching the provided numeric `id`. If the event does not exist, respond with a 404 status and an appropriate message.
+  Returns a single event matching the provided numeric `id`. If the event does not exist, respond an appropriate message.
 
 - `GET /search`  
   Allows filtering events using any combination of query parameters:
@@ -78,5 +78,21 @@ const events = [
   - `day` (day of the week)
 
   If no events match the provided search criteria, respond with a 404 status and a message indicating no results were found.
+
+`POST /events`  
+Adds a new event to the `events` array.
+  - The request body should contain the event's `name`, `borough`, `type`, `free`, and `day`.
+  - Return the newly created event.
+
+`PUT /events/:id`  
+Updates an existing event using the provided numeric `id`.
+  - The request body should contain the event properties to update.
+  - If the event does not exist, respond with an appropriate message.
+- Return the updated event.
+
+`DELETE /events/:id`  
+Deletes an event using the provided numeric `id`.
+- If the event does not exist, respond with an appropriate message.
+- Return a message confirming that the event was deleted.
 
 - Any unknown route should return a 404 status with a `"Route not found"` message.
