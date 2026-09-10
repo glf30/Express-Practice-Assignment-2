@@ -65,14 +65,11 @@ const events = [
 - `GET /borough/:boroughName`  
   Returns all events for the given borough . If no events are found, respond with a message indicating no events were found for that borough.
 
-- `GET /type/:eventType`  
-  Returns all events that match the given event type.
-
 - `GET /events/:id`  
   Returns a single event matching the provided numeric `id`. If the event does not exist, respond an appropriate message.
 
 - `GET /search`  
-  Allows filtering events using any combination of query parameters:
+  Allows filtering events using the following query parameters:
   - `type` (event type)
   - `free` (`true` or `false`)
   - `day` (day of the week)
