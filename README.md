@@ -68,7 +68,7 @@ const events = [
 - `GET /events/:id`  
   Returns a single event matching the provided numeric `id`. If the event does not exist, respond with an appropriate message.
 
-- `GET /search`  
+- `GET /`  
   Allows filtering events using the following query parameters:
   - `type` (event type)
   - `free` (`true` or `false`)
