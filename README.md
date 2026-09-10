@@ -73,9 +73,6 @@ const events = [
   - `day` (day of the week)
   - `type` (event type)
   - `free` (`true` or `false`)
-  
-
-  If no events match the provided search criteria, respond with a 404 status and a message indicating no results were found.
 
 - `POST /events`  
 Adds a new event to the `events` array.
