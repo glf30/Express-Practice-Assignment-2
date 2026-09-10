@@ -59,16 +59,16 @@ const events = [
 
 ## Routes
 
-- `GET /`  
+- `GET /events`  
   Returns the full list of events.
 
-- `GET /borough/:boroughName`  
+- `GET /events/borough/:boroughName`  
   Returns all events for the given borough . If no events are found, respond with a message indicating no events were found for that borough.
 
 - `GET /events/:id`  
   Returns a single event matching the provided numeric `id`. If the event does not exist, respond with an appropriate message.
 
-- `GET /`  
+- `GET /events`  
   Allows filtering events using the following query parameters:
   - `day` (day of the week)
   - `type` (event type)
