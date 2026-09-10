@@ -70,9 +70,10 @@ const events = [
 
 - `GET /`  
   Allows filtering events using the following query parameters:
+  - `day` (day of the week)
   - `type` (event type)
   - `free` (`true` or `false`)
-  - `day` (day of the week)
+  
 
   If no events match the provided search criteria, respond with a 404 status and a message indicating no results were found.
 
