@@ -53,6 +53,54 @@ const events = [
     type: "music",
     free: false,
     day: "thursday"
+  },
+  {
+    id: 7,
+    name: "Brooklyn Comedy Night",
+    borough: "brooklyn",
+    type: "comedy",
+    free: true,
+    day: "wednesday"
+  },
+  {
+    id: 8,
+    name: "Queens Farmers Market",
+    borough: "queens",
+    type: "food",
+    free: true,
+    day: "sunday"
+  },
+  {
+    id: 9,
+    name: "Bronx Street Art Festival",
+    borough: "bronx",
+    type: "art",
+    free: false,
+    day: "saturday"
+  },
+  {
+    id: 10,
+    name: "Harbor History Tour",
+    borough: "staten island",
+    type: "history",
+    free: true,
+    day: "monday"
+  },
+  {
+    id: 11,
+    name: "Manhattan Film Festival",
+    borough: "manhattan",
+    type: "movie",
+    free: false,
+    day: "sunday"
+  },
+  {
+    id: 12,
+    name: "Brooklyn Music in the Park",
+    borough: "brooklyn",
+    type: "music",
+    free: true,
+    day: "tuesday"
   }
 ];
 ```
